@@ -504,7 +504,7 @@
       </g>
       <g id="data-layer" role="dataset">
         <g id="series-cattle_population_in_million_head" class=" series "
-          style="fill:hsl(225, 30%, 52%);stroke:hsl(225, 30%, 52%);stroke-width:5;">
+          style="fill:var(--series-1);stroke:var(--series-1);stroke-width:5;">
           <g role="datapoint" id="datapoint-2012_1001_72_Cattle population in million head"
             class=" data-line datapoint ">
             <path id="datapoint-2012_1001_72_Cattle population in million head-0"
@@ -630,6 +630,12 @@
     </text>
   </g>
 
+  <g id="colorpicker" transform="translate(10,620)">
+    <circle cx="20" cy="0" r="15" fill="hsl(225, 30%, 52%)"/> 
+    <circle cx="20" cy="60" r="15" fill="hsl(12, 69%, 35%)"/> 
+    <circle cx="20" cy="120" r="15" fill="hsl(75, 43%, 45%)"/> 
+  </g>
+
   <script>
     window.addEventListener('load', () => new HighlightChart());
 
@@ -643,12 +649,14 @@
       init () {
         this.narratives = this.root.getElementById('narratives');
         this.highlights = this.root.querySelectorAll('[data-highlight]');
+        this.colorpicker = this.root.getElementById('colorpicker');
 
 
         console.log('this.narratives', this.narratives);
         console.log('this.highlights', this.highlights);
 
         this.narratives.addEventListener('mouseover', this.setNarrative.bind(this));
+        this.colorpicker.addEventListener('mouseover', this.setColor.bind(this));
       }
 
       reset () {
@@ -671,6 +679,15 @@
             highlight.classList.add('active');
           }
         });
+      }
+
+
+      setColor ( event ) {
+        const target = event.target;
+
+        const color = target.getAttribute('fill');
+
+        this.root.style.setProperty('--series-1', color);
       }
 
 
