@@ -491,11 +491,19 @@
     </g>
     <g id="chart-layers" transform="translate(68.03,63)">
       <rect id="data-backdrop" width="600" height="450" />
-      <g id="background-annotation-layer">
+      <g id="background-highlights-layer">
         <g>
           <rect data-highlight="4" class="highlight-background" width="171" height="450" />
           <rect data-highlight="5" class="highlight-background" x="172" width="85" height="450" />
           <rect data-highlight="6" class="highlight-background" x="257" width="343" height="450" />
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+      </g>
+      <g id="background-annotation-layer">
+        <g>
         </g>
         <g>
         </g>
@@ -578,8 +586,6 @@
         </g>
       </g>
       <g id="highlights-layer">
-      </g>
-      <g id="foreground-annotation-layer">
         <g data-highlight="2" class="highlight-foreground">
           <circle id="" cx="0" cy="82" r="15"/> 
         </g>
@@ -607,6 +613,8 @@
         <g data-highlight="8" class="highlight-foreground">
           <circle cx="257" cy="407" r="15"/> 
         </g>
+      </g>
+      <g id="foreground-annotation-layer">
         <g>
         </g>
       </g>
