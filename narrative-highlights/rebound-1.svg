@@ -1,0 +1,679 @@
+<svg tabindex="0" aria-label="Cattle population worldwide 2012 to 2019, accessible chart"
+  xmlns="http://www.w3.org/2000/svg" data-charttype="bar" class="  " viewBox="0 0 703.63 800"
+  style="font-family:Helvetica, sans-serif;font-weight:300;--axis-line-color:hsl(0, 0%, 0%);--label-color:hsl(0, 0%, 0%);"
+  id="para4015b038-45e7-4c29-818a-86565882d7f5">
+  <style>
+    :root {
+      --series-1: hsl(225, 30%, 52%);
+    }
+
+    #frame {
+      fill: var(--background-color);
+      stroke: none;
+    }
+
+    #frame {
+      fill: white;
+    }
+
+    #frame.pending {
+      fill: lightgray;
+    }
+
+    .darkmode {
+      --axis-line-color: ghostwhite;
+      --label-color: ghostwhite;
+      --background-color: black;
+    }
+
+    #loading-message {
+      fill: black;
+    }
+
+    #loading-message text {
+      fill: white;
+    }
+
+    .grid-horiz {
+      stroke: var(--axis-line-color);
+      opacity: 0.2;
+    }
+
+    .grid-vert {
+      stroke: var(--axis-line-color);
+      opacity: 0.2;
+    }
+
+    #grid-zero {
+      opacity: 0.6;
+      stroke-width: 2;
+    }
+
+    .tick-horiz {
+      stroke: black;
+    }
+
+    .tick-vert {
+      stroke: black;
+    }
+
+    .label {
+      fill: var(--label-color);
+      stroke: none;
+    }
+
+    .tick-label {
+      font-size: 13px;
+      fill: var(--label-color);
+    }
+
+    .bar-label {
+      font-size: 13px;
+      fill: white;
+    }
+
+    .radial-value-label {
+      fill: var(--label-color);
+    }
+
+    .radial-cat-label-leader {
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .radial-slice {
+      stroke: white;
+      stroke-width: 2;
+    }
+
+    .label-leader {
+      stroke-width: 2;
+    }
+
+    #vert-axis-line {
+      fill: none;
+      stroke: var(--axis-line-color);
+      stroke-width: 2px;
+      stroke-linecap: round;
+    }
+
+    #horiz-axis-line {
+      fill: none;
+      stroke: var(--axis-line-color);
+      opacity: 1;
+      stroke-width: 2px;
+      stroke-linecap: round;
+    }
+
+    rect#data-backdrop {
+      stroke: none;
+      fill: none;
+      pointer-events: all;
+    }
+
+    .symbol {
+      stroke-linejoin: round;
+    }
+
+    .symbol.outline {
+      fill: white;
+    }
+
+    use.visited-mark {
+      pointer-events: none;
+    }
+
+    .data-line {
+      fill: none;
+      stroke-linecap: round;
+    }
+
+    .chart-title {
+      font-size: 1.25rem;
+    }
+
+    .range-highlight {
+      fill: silver;
+      opacity: 0.5;
+    }
+
+    .linebreaker-marker {
+      fill: rgb(112, 79, 79);
+    }
+
+    .user-linebreaker-marker {
+      fill: rgb(229, 16, 16);
+    }
+
+    .trend-line {
+      display: inline;
+      stroke-width: 8px;
+      stroke-linecap: butt;
+      stroke-dasharray: 12, 12;
+      stroke-opacity: 0.8;
+    }
+
+    .user-trend-line {
+      display: inline;
+      stroke-width: 8px;
+      stroke-linecap: butt;
+      stroke-dasharray: 12, 12;
+      stroke-opacity: 0.8;
+    }
+
+    .datapoint.visited {
+      stroke: var(--visited-color);
+      fill: var(--visited-color);
+      stroke-width: var(--visited-stroke-width);
+    }
+
+    .lowlight {
+      opacity: 0.2;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .control-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5em;
+    }
+
+
+
+    .highlight-background,
+    .highlight-foreground {
+      display: none;
+    }
+
+    .highlight-background.active {
+      display: inline;
+      fill: var(--series-1);
+      fill-opacity: 0.15;
+    }
+
+    .highlight-foreground.active {
+      display: inline;
+      fill: none;
+      stroke: var(--series-1);
+      stroke-width: 3px;
+      stroke-opacity: 0.6;
+    }
+
+    .highlight-foreground.active path {
+      stroke-width: 15px;
+    }
+
+    #narratives .active {
+      font-weight: bold;
+    }
+  </style>
+  <defs>
+    <path id="sym-circle-outline" d="m0,-5.64 a5.64,5.64 0 1,1 0,11.28 a5.64,5.64 0 1,1 0,-11.28" />
+    <clipPath id="clip-path">
+      <rect x="0" y="0" width="600" height="450">
+      </rect>
+    </clipPath>
+  </defs>
+  <metadata data-type="text/jim+json">
+    {
+    "dataset": {
+    "title": "Cattle population worldwide 2012 to 2019",
+    "facets": {
+    "x": {
+    "label": "Year",
+    "variableType": "independent",
+    "measure": "interval",
+    "datatype": "date",
+    "units": "year",
+    "displayType": {
+    "type": "axis",
+    "orientation": "horizontal"
+    }
+    },
+    "y": {
+    "label": "Cattle population in million head",
+    "variableType": "dependent",
+    "measure": "ratio",
+    "datatype": "number",
+    "multiplier": 1000000,
+    "displayType": {
+    "type": "axis",
+    "orientation": "vertical"
+    }
+    }
+    },
+    "series": [
+    {
+    "name": "Cattle population in million head",
+    "type": "line",
+    "records": [
+    {
+    "x": "2012",
+    "y": "1001.72"
+    },
+    {
+    "x": "2013",
+    "y": "1005.29"
+    },
+    {
+    "x": "2014",
+    "y": "1008.57"
+    },
+    {
+    "x": "2015",
+    "y": "969.26"
+    },
+    {
+    "x": "2016",
+    "y": "978.77"
+    },
+    {
+    "x": "2017",
+    "y": "984.53"
+    },
+    {
+    "x": "2018",
+    "y": "996.36"
+    },
+    {
+    "x": "2019**",
+    "y": "1007.26"
+    }
+    ]
+    }
+    ]
+    },
+    "selectors": {
+    "chartTitle": {
+    "dom": "#chart-title",
+    "json": "$.datasets[0].title"
+    },
+    "datapoint1": {
+    "dom": "#datapoint-2012_1001_72_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[0].*"
+    ]
+    },
+    "datapoint2": {
+    "dom": "#datapoint-2013_1005_29_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[1].*"
+    ]
+    },
+    "datapoint3": {
+    "dom": "#datapoint-2014_1008_57_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[2].*"
+    ]
+    },
+    "datapoint4": {
+    "dom": "#datapoint-2015_969_26_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[3].*"
+    ]
+    },
+    "datapoint5": {
+    "dom": "#datapoint-2016_978_77_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[4].*"
+    ]
+    },
+    "datapoint6": {
+    "dom": "#datapoint-2017_984_53_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[5].*"
+    ]
+    },
+    "datapoint7": {
+    "dom": "#datapoint-2018_996_36_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[6].*"
+    ]
+    },
+    "datapoint8": {
+    "dom": "#datapoint-2019__1007_26_Cattle population in million head",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[7].*"
+    ]
+    }
+    }
+    }
+  </metadata>
+  <rect id="frame" pointer-events="all" x="0" y="0" width="100%" height="100%">
+  </rect>
+  <g role="graphics-document" aria-roledescription="line chart" transform="translate(25.60,8)">
+    <text class=" chart-title label " role="heading" x="182.76" y="18.50" text-anchor="start" id="chart-title">
+      Cattle population worldwide 2012 to 2019
+    </text>
+    <g id="horiz-axis" role="graphics-object" aria-roledescription="x-axis" transform="translate(68.03,513)">
+      <path id="horiz-axis-line" d="M-10,0 h610" />
+      <g id="horiz-axis-tick-strip" transform="translate(0,-1)">
+        <path id="" class="tick-horiz" d="M85.71,0 v10" />
+        <path id="" class="grid-horiz" d="M85.71,0 v-450" />
+        <path id="" class="tick-horiz" d="M171.43,0 v10" />
+        <path id="" class="grid-horiz" d="M171.43,0 v-450" />
+        <path id="" class="tick-horiz" d="M257.14,0 v10" />
+        <path id="" class="grid-horiz" d="M257.14,0 v-450" />
+        <path id="" class="tick-horiz" d="M342.86,0 v10" />
+        <path id="" class="grid-horiz" d="M342.86,0 v-450" />
+        <path id="" class="tick-horiz" d="M428.57,0 v10" />
+        <path id="" class="grid-horiz" d="M428.57,0 v-450" />
+        <path id="" class="tick-horiz" d="M514.29,0 v10" />
+        <path id="" class="grid-horiz" d="M514.29,0 v-450" />
+        <path id="" class="tick-horiz" d="M600,0 v10" />
+        <path id="" class="grid-horiz" d="M600,0 v-450" />
+      </g>
+      <g id="tick-label-tier-horiz-0" transform="translate(0,25)">
+        <text class=" tick-label horiz south label " role="axislabel" x="8.49" y="8.49" text-anchor="end"
+          transform="&#10;        translate(8.49,8.49)&#10;        rotate(-45)&#10;        translate(-8.49,-8.49)"
+          id="tick-label-horiz-0">
+          2012
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="94.20" y="8.49" text-anchor="end"
+          transform="&#10;        translate(94.20,8.49)&#10;        rotate(-45)&#10;        translate(-94.20,-8.49)"
+          id="tick-label-horiz-1">
+          2013
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="179.91" y="8.49" text-anchor="end"
+          transform="&#10;        translate(179.91,8.49)&#10;        rotate(-45)&#10;        translate(-179.91,-8.49)"
+          id="tick-label-horiz-2">
+          2014
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="265.63" y="8.49" text-anchor="end"
+          transform="&#10;        translate(265.63,8.49)&#10;        rotate(-45)&#10;        translate(-265.63,-8.49)"
+          id="tick-label-horiz-3">
+          2015
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="351.34" y="8.49" text-anchor="end"
+          transform="&#10;        translate(351.34,8.49)&#10;        rotate(-45)&#10;        translate(-351.34,-8.49)"
+          id="tick-label-horiz-4">
+          2016
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="437.06" y="8.49" text-anchor="end"
+          transform="&#10;        translate(437.06,8.49)&#10;        rotate(-45)&#10;        translate(-437.06,-8.49)"
+          id="tick-label-horiz-5">
+          2017
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="522.77" y="8.49" text-anchor="end"
+          transform="&#10;        translate(522.77,8.49)&#10;        rotate(-45)&#10;        translate(-522.77,-8.49)"
+          id="tick-label-horiz-6">
+          2018
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="608.49" y="8.49" text-anchor="end"
+          transform="&#10;        translate(608.49,8.49)&#10;        rotate(-45)&#10;        translate(-608.49,-8.49)"
+          id="tick-label-horiz-7">
+          2019**
+        </text>
+      </g>
+    </g>
+    <g id="vert-axis" role="graphics-object" aria-roledescription="y-axis" transform="translate(0,63)">
+      <text class=" axis-title label " role="heading" x="15" y="225" text-anchor="middle"
+        transform="&#10;        translate(15,225)&#10;        rotate(-90)&#10;        translate(-15,-225)"
+        id="axis-title-vert">
+        Cattle population in million head
+      </text>
+      <g id="tick-label-tier-vert-0" transform="translate(26.50,0)">
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="455" text-anchor="end"
+          id="tick-label-vert-0">
+          965
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="405" text-anchor="end"
+          id="tick-label-vert-1">
+          970
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="355" text-anchor="end"
+          id="tick-label-vert-2">
+          975
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="305" text-anchor="end"
+          id="tick-label-vert-3">
+          980
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="255" text-anchor="end"
+          id="tick-label-vert-4">
+          985
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="205" text-anchor="end"
+          id="tick-label-vert-5">
+          990
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="155" text-anchor="end"
+          id="tick-label-vert-6">
+          995
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="105" text-anchor="end"
+          id="tick-label-vert-7">
+          1,000
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="55" text-anchor="end"
+          id="tick-label-vert-8">
+          1,005
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="32.53" y="5" text-anchor="end"
+          id="tick-label-vert-9">
+          1,010
+        </text>
+      </g>
+      <g id="vert-axis-tick-strip" transform="translate(59.03,0)">
+        <path id="" class="tick-vert" d="M10,0 h-10" />
+        <path id="" class="grid-vert" d="M10,0 h600" />
+        <path id="" class="tick-vert" d="M10,50 h-10" />
+        <path id="" class="grid-vert" d="M10,50 h600" />
+        <path id="" class="tick-vert" d="M10,100 h-10" />
+        <path id="" class="grid-vert" d="M10,100 h600" />
+        <path id="" class="tick-vert" d="M10,150 h-10" />
+        <path id="" class="grid-vert" d="M10,150 h600" />
+        <path id="" class="tick-vert" d="M10,200 h-10" />
+        <path id="" class="grid-vert" d="M10,200 h600" />
+        <path id="" class="tick-vert" d="M10,250 h-10" />
+        <path id="" class="grid-vert" d="M10,250 h600" />
+        <path id="" class="tick-vert" d="M10,300 h-10" />
+        <path id="" class="grid-vert" d="M10,300 h600" />
+        <path id="" class="tick-vert" d="M10,350 h-10" />
+        <path id="" class="grid-vert" d="M10,350 h600" />
+        <path id="" class="tick-vert" d="M10,400 h-10" />
+        <path id="" class="grid-vert" d="M10,400 h600" />
+      </g>
+      <path transform="translate(69.03,0)" id="vert-axis-line" d="M0,0 v460" />
+    </g>
+    <g id="chart-layers" transform="translate(68.03,63)">
+      <rect id="data-backdrop" width="600" height="450" />
+      <g id="background-annotation-layer">
+        <g>
+          <rect data-highlight="4" class="highlight-background" width="171" height="450" />
+          <rect data-highlight="5" class="highlight-background" x="172" width="85" height="450" />
+          <rect data-highlight="6" class="highlight-background" x="257" width="343" height="450" />
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+      </g>
+      <g id="data-layer" role="dataset">
+        <g id="series-cattle_population_in_million_head" class=" series "
+          style="fill:hsl(225, 30%, 52%);stroke:hsl(225, 30%, 52%);stroke-width:5;">
+          <g role="datapoint" id="datapoint-2012_1001_72_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2012_1001_72_Cattle population in million head-0"
+              style="--datapoint-centroid:0px calc(100% - 0px);" class=" leg-right " d="M0,82.80L42.86,64.95"
+              clip-path="url(#clip-path)" />
+            <use href="#sym-circle-outline" id="datapoint-2012_1001_72_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(0,82.80)" />
+          </g>
+          <g role="datapoint" id="datapoint-2013_1005_29_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2013_1005_29_Cattle population in million head-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M42.86,64.95L85.71,47.10" />
+            <path id="datapoint-2013_1005_29_Cattle population in million head-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M85.71,47.10L128.57,30.70" />
+            <use href="#sym-circle-outline" id="datapoint-2013_1005_29_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(85.71,47.10)" />
+          </g>
+          <g role="datapoint" id="datapoint-2014_1008_57_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2014_1008_57_Cattle population in million head-0" style="--datapoint-centroid:50% 0px;"
+              class=" leg-left " d="M128.57,30.70L171.43,14.30" />
+            <path id="datapoint-2014_1008_57_Cattle population in million head-1" style="--datapoint-centroid:50% 0px;"
+              class=" leg-right " d="M171.43,14.30L214.29,210.85" />
+            <use href="#sym-circle-outline" id="datapoint-2014_1008_57_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(171.43,14.30)" />
+          </g>
+          <g role="datapoint" id="datapoint-2015_969_26_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2015_969_26_Cattle population in million head-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M214.29,210.85L257.14,407.40" />
+            <path id="datapoint-2015_969_26_Cattle population in million head-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M257.14,407.40L300.00,359.85" />
+            <use href="#sym-circle-outline" id="datapoint-2015_969_26_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(257.14,407.40)" />
+          </g>
+          <g role="datapoint" id="datapoint-2016_978_77_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2016_978_77_Cattle population in million head-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M300,359.85L342.86,312.30" />
+            <path id="datapoint-2016_978_77_Cattle population in million head-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M342.86,312.30L385.71,283.50" />
+            <use href="#sym-circle-outline" id="datapoint-2016_978_77_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(342.86,312.30)" />
+          </g>
+          <g role="datapoint" id="datapoint-2017_984_53_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2017_984_53_Cattle population in million head-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M385.71,283.50L428.57,254.70" />
+            <path id="datapoint-2017_984_53_Cattle population in million head-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M428.57,254.70L471.43,195.55" />
+            <use href="#sym-circle-outline" id="datapoint-2017_984_53_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(428.57,254.70)" />
+          </g>
+          <g role="datapoint" id="datapoint-2018_996_36_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2018_996_36_Cattle population in million head-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M471.43,195.55L514.29,136.40" />
+            <path id="datapoint-2018_996_36_Cattle population in million head-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M514.29,136.40L557.14,81.90" />
+            <use href="#sym-circle-outline" id="datapoint-2018_996_36_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(514.29,136.40)" />
+          </g>
+          <g role="datapoint" id="datapoint-2019__1007_26_Cattle population in million head"
+            class=" data-line datapoint ">
+            <path id="datapoint-2019__1007_26_Cattle population in million head-0"
+              style="--datapoint-centroid:calc(100% - 0px) 0px;" class=" leg-left " d="M557.14,81.90L600,27.40"
+              clip-path="url(#clip-path)" />
+            <use href="#sym-circle-outline" id="datapoint-2019__1007_26_Cattle population in million head-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(600,27.40)" />
+          </g>
+        </g>
+      </g>
+      <g id="highlights-layer">
+      </g>
+      <g id="foreground-annotation-layer">
+        <g data-highlight="2" class="highlight-foreground">
+          <circle id="" cx="0" cy="82" r="15"/> 
+        </g>
+        <g data-highlight="3" class="highlight-foreground">
+          <circle cx="600" cy="27" r="15"/> 
+        </g>
+        <g data-highlight="4" class="highlight-foreground">
+          <circle id="" cx="0" cy="82" r="15"/> 
+          <circle cx="171" cy="14" r="15"/> 
+          <path d="M14,76 L157,20" />
+        </g>
+        <g data-highlight="5" class="highlight-foreground">
+          <circle cx="171" cy="14" r="15"/> 
+          <circle cx="257" cy="407" r="15"/> 
+          <path d="M174,29 L254,395" />
+        </g>
+        <g data-highlight="6" class="highlight-foreground">
+          <circle cx="257" cy="407" r="15"/> 
+          <circle cx="600" cy="27" r="15"/> 
+          <path d="M266,398 L592,37" />
+        </g>
+        <g data-highlight="7" class="highlight-foreground">
+          <circle cx="171" cy="14" r="15"/> 
+        </g>
+        <g data-highlight="8" class="highlight-foreground">
+          <circle cx="257" cy="407" r="15"/> 
+        </g>
+        <g>
+        </g>
+      </g>
+      <g id="selection-layer">
+      </g>
+      <g id="focus-layer">
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(100,610)">
+    <text id="narratives" x="0">
+      <tspan x="0" dy="0" data-highlight="1">This line chart shows the number of cattle in the world over time</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="2">from almost 1.002 billion in 2012 </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="3">to more than 1.007 billion in 2019.</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="4">The number has a rising trend,</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="5"> before falling </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="6">and then rebounding back up.</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="7">The number peaks at almost 1.009 billion in 2014.</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="8"> The number bottoms out at almost 969.3 million in 2015.</tspan>
+    </text>
+  </g>
+
+  <script>
+    window.addEventListener('load', () => new HighlightChart());
+
+    class HighlightChart {
+      constructor() {
+        this.svgns = 'http://www.w3.org/2000/svg';
+        this.root = document.documentElement;
+        this.init();
+      }
+
+      init () {
+        this.narratives = this.root.getElementById('narratives');
+        this.highlights = this.root.querySelectorAll('[data-highlight]');
+
+
+        console.log('this.narratives', this.narratives);
+        console.log('this.highlights', this.highlights);
+
+        this.narratives.addEventListener('mouseover', this.setNarrative.bind(this));
+      }
+
+      reset () {
+        console.log('this.highlights', this.highlights);
+        this.highlights.forEach((highlight) => {
+          highlight.classList.remove('active');
+        });
+      }
+
+      setNarrative ( event ) {
+        const target = event.target;
+        console.log('target', target);
+
+        this.reset();
+
+        const index = target.dataset.highlight;
+
+        this.highlights.forEach((highlight) => {
+          if (highlight.dataset.highlight === index) {
+            highlight.classList.add('active');
+          }
+        });
+      }
+
+
+    }
+  </script>
+</svg>
