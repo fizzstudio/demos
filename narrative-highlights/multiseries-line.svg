@@ -1,0 +1,1610 @@
+<svg tabindex="0" aria-label="Passenger cars - sales in selected countries worldwide 2005 to 2018, accessible chart"
+  xmlns="http://www.w3.org/2000/svg" data-charttype="bar" class="  " viewBox="0 0 1320 600"
+  style="font-family:Helvetica, sans-serif;font-weight:300;--axis-line-color:hsl(0, 0%, 0%);--label-color:hsl(0, 0%, 0%);"
+  id="para47cac3ce-b89e-452e-8602-0d5625d77629">
+  <style>
+    :root {
+      --axis-line-color: black;
+      --label-color: black;
+      --background-color: white;
+      --series-1: hsl(225, 30%, 52%);
+    }
+
+    #frame {
+      fill: var(--background-color);
+      stroke: none;
+    }
+
+    #frame.pending {
+      fill: lightgray;
+    }
+
+    .darkmode {
+      --axis-line-color: ghostwhite;
+      --label-color: ghostwhite;
+      --background-color: black;
+    }
+
+    #loading-message {
+      fill: black;
+    }
+
+    #loading-message text {
+      fill: white;
+    }
+
+    .grid-horiz {
+      stroke: var(--axis-line-color);
+      opacity: 0.2;
+    }
+
+    .grid-vert {
+      stroke: var(--axis-line-color);
+      opacity: 0.2;
+    }
+
+    #grid-zero {
+      opacity: 0.6;
+      stroke-width: 2;
+    }
+
+    .tick-horiz {
+      stroke: black;
+    }
+
+    .tick-vert {
+      stroke: black;
+    }
+
+    .label {
+      fill: var(--label-color);
+      stroke: none;
+    }
+
+    .tick-label {
+      font-size: 13px;
+      fill: var(--label-color);
+    }
+
+    .bar-label {
+      font-size: 13px;
+      fill: white;
+    }
+
+    .radial-value-label {
+      fill: var(--label-color);
+    }
+
+    .radial-cat-label-leader {
+      fill: none;
+      stroke-width: 2;
+    }
+
+    .radial-slice {
+      stroke: white;
+      stroke-width: 2;
+    }
+
+    .label-leader {
+      stroke-width: 2;
+    }
+
+    #vert-axis-line {
+      fill: none;
+      stroke: var(--axis-line-color);
+      stroke-width: 2px;
+      stroke-linecap: round;
+    }
+
+    #horiz-axis-line {
+      fill: none;
+      stroke: var(--axis-line-color);
+      opacity: 1;
+      stroke-width: 2px;
+      stroke-linecap: round;
+    }
+
+    rect#data-backdrop {
+      stroke: none;
+      fill: none;
+      pointer-events: all;
+    }
+
+    .symbol {
+      stroke-linejoin: round;
+    }
+
+    .symbol.outline {
+      fill: white;
+    }
+
+    use.visited-mark {
+      pointer-events: none;
+    }
+
+    .data-line {
+      fill: none;
+      stroke-linecap: round;
+    }
+
+    .chart-title {
+      font-size: 1.25rem;
+    }
+
+    .range-highlight {
+      fill: silver;
+      opacity: 0.5;
+    }
+
+    .linebreaker-marker {
+      fill: rgb(112, 79, 79);
+    }
+
+    .user-linebreaker-marker {
+      fill: rgb(229, 16, 16);
+    }
+
+    .trend-line {
+      display: inline;
+      stroke-width: 8px;
+      stroke-linecap: butt;
+      stroke-dasharray: 12, 12;
+      stroke-opacity: 0.8;
+    }
+
+    .user-trend-line {
+      display: inline;
+      stroke-width: 8px;
+      stroke-linecap: butt;
+      stroke-dasharray: 12, 12;
+      stroke-opacity: 0.8;
+    }
+
+    .datapoint.visited {
+      stroke: var(--visited-color);
+      fill: var(--visited-color);
+      stroke-width: var(--visited-stroke-width);
+    }
+
+    .lowlight {
+      opacity: 0.2;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .control-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5em;
+    }
+
+
+
+
+
+    .highlight-background,
+    .highlight-foreground {
+      display: none;
+    }
+
+    .highlight-background.active {
+      display: inline;
+      fill: var(--series-1);
+      fill-opacity: 0.15;
+    }
+
+    .highlight-foreground.active {
+      display: inline;
+      fill: var(--series-1);
+      stroke: var(--series-1);
+      stroke-width: 3px;
+      stroke-opacity: 0.6;
+      fill-opacity: 0.2;
+    }
+
+    .highlight-foreground.active path {
+      stroke-width: 15px;
+    }
+
+    #narratives .active {
+      font-weight: bold;
+    }
+
+    .series_china {
+      /* stroke-width: 15px; */
+    }
+
+    .series {
+      stroke-width: 5px;
+    }
+
+    .series.active {
+      stroke-width: 10px;
+    }
+
+    
+  </style>
+  <defs>
+    <path id="sym-square-outline" d="m-5,-5 h10 v10 h-10 z" />
+    <path id="sym-triangle_up-outline" d="m-7.60,5.26 h15.20 l-7.60,-13.16 z" />
+    <path id="sym-circle-outline" d="m0,-5.64 a5.64,5.64 0 1,1 0,11.28 a5.64,5.64 0 1,1 0,-11.28" />
+    <path id="sym-diamond-outline"
+      d="&#10;      m0,-7.07&#10;      l7.07,7.07&#10;      l-7.07,7.07&#10;      l-7.07,-7.07 z" />
+    <clipPath id="clip-path">
+      <rect x="0" y="0" width="600" height="450">
+      </rect>
+    </clipPath>
+  </defs>
+  <metadata data-type="text/jim+json">
+    {
+    "dataset": {
+    "title": "Passenger cars - sales in selected countries worldwide 2005 to 2018",
+    "facets": {
+    "x": {
+    "label": "Year",
+    "variableType": "independent",
+    "measure": "interval",
+    "datatype": "date",
+    "units": "year",
+    "displayType": {
+    "type": "axis",
+    "orientation": "horizontal"
+    }
+    },
+    "y": {
+    "label": "Passenger car sales in millions",
+    "variableType": "dependent",
+    "measure": "ratio",
+    "datatype": "number",
+    "multiplier": 1000000,
+    "displayType": {
+    "type": "axis",
+    "orientation": "vertical"
+    }
+    }
+    },
+    "series": [
+    {
+    "name": "China",
+    "type": "line",
+    "records": [
+    {
+    "x": "2005",
+    "y": "3.97"
+    },
+    {
+    "x": "2006",
+    "y": "5.18"
+    },
+    {
+    "x": "2007",
+    "y": "6.3"
+    },
+    {
+    "x": "2008",
+    "y": "6.76"
+    },
+    {
+    "x": "2009",
+    "y": "10.33"
+    },
+    {
+    "x": "2010",
+    "y": "13.76"
+    },
+    {
+    "x": "2011",
+    "y": "14.47"
+    },
+    {
+    "x": "2012",
+    "y": "15.5"
+    },
+    {
+    "x": "2013",
+    "y": "17.93"
+    },
+    {
+    "x": "2014",
+    "y": "19.71"
+    },
+    {
+    "x": "2015",
+    "y": "21.21"
+    },
+    {
+    "x": "2016",
+    "y": "24.38"
+    },
+    {
+    "x": "2017",
+    "y": "24.72"
+    },
+    {
+    "x": "2018",
+    "y": "23.71"
+    }
+    ]
+    },
+    {
+    "name": "U.S.",
+    "type": "line",
+    "records": [
+    {
+    "x": "2005",
+    "y": "7.66"
+    },
+    {
+    "x": "2006",
+    "y": "7.76"
+    },
+    {
+    "x": "2007",
+    "y": "7.56"
+    },
+    {
+    "x": "2008",
+    "y": "6.77"
+    },
+    {
+    "x": "2009",
+    "y": "5.4"
+    },
+    {
+    "x": "2010",
+    "y": "5.64"
+    },
+    {
+    "x": "2011",
+    "y": "6.09"
+    },
+    {
+    "x": "2012",
+    "y": "7.24"
+    },
+    {
+    "x": "2013",
+    "y": "7.59"
+    },
+    {
+    "x": "2014",
+    "y": "7.69"
+    },
+    {
+    "x": "2015",
+    "y": "7.52"
+    },
+    {
+    "x": "2016",
+    "y": "6.87"
+    },
+    {
+    "x": "2017",
+    "y": "6.08"
+    },
+    {
+    "x": "2018",
+    "y": "5.3"
+    }
+    ]
+    },
+    {
+    "name": "Japan",
+    "type": "line",
+    "records": [
+    {
+    "x": "2005",
+    "y": "4.75"
+    },
+    {
+    "x": "2006",
+    "y": "4.61"
+    },
+    {
+    "x": "2007",
+    "y": "4.33"
+    },
+    {
+    "x": "2008",
+    "y": "4.18"
+    },
+    {
+    "x": "2009",
+    "y": "3.91"
+    },
+    {
+    "x": "2010",
+    "y": "4.2"
+    },
+    {
+    "x": "2011",
+    "y": "3.51"
+    },
+    {
+    "x": "2012",
+    "y": "4.57"
+    },
+    {
+    "x": "2013",
+    "y": "4.56"
+    },
+    {
+    "x": "2014",
+    "y": "4.7"
+    },
+    {
+    "x": "2015",
+    "y": "4.22"
+    },
+    {
+    "x": "2016",
+    "y": "4.15"
+    },
+    {
+    "x": "2017",
+    "y": "4.39"
+    },
+    {
+    "x": "2018",
+    "y": "4.39"
+    }
+    ]
+    },
+    {
+    "name": "Germany",
+    "type": "line",
+    "records": [
+    {
+    "x": "2005",
+    "y": "3.32"
+    },
+    {
+    "x": "2006",
+    "y": "3.47"
+    },
+    {
+    "x": "2007",
+    "y": "3.15"
+    },
+    {
+    "x": "2008",
+    "y": "3.09"
+    },
+    {
+    "x": "2009",
+    "y": "3.81"
+    },
+    {
+    "x": "2010",
+    "y": "2.92"
+    },
+    {
+    "x": "2011",
+    "y": "3.17"
+    },
+    {
+    "x": "2012",
+    "y": "3.08"
+    },
+    {
+    "x": "2013",
+    "y": "2.95"
+    },
+    {
+    "x": "2014",
+    "y": "3.04"
+    },
+    {
+    "x": "2015",
+    "y": "3.21"
+    },
+    {
+    "x": "2016",
+    "y": "3.35"
+    },
+    {
+    "x": "2017",
+    "y": "3.44"
+    },
+    {
+    "x": "2018",
+    "y": "3.44"
+    }
+    ]
+    }
+    ]
+    },
+    "selectors": {
+    "chartTitle": {
+    "dom": "#chart-title",
+    "json": "$.datasets[0].title"
+    },
+    "datapoint1": {
+    "dom": "#datapoint-2005_3_97_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[0].*"
+    ]
+    },
+    "datapoint2": {
+    "dom": "#datapoint-2006_5_18_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[1].*"
+    ]
+    },
+    "datapoint3": {
+    "dom": "#datapoint-2007_6_3_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[2].*"
+    ]
+    },
+    "datapoint4": {
+    "dom": "#datapoint-2008_6_76_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[3].*"
+    ]
+    },
+    "datapoint5": {
+    "dom": "#datapoint-2009_10_33_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[4].*"
+    ]
+    },
+    "datapoint6": {
+    "dom": "#datapoint-2010_13_76_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[5].*"
+    ]
+    },
+    "datapoint7": {
+    "dom": "#datapoint-2011_14_47_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[6].*"
+    ]
+    },
+    "datapoint8": {
+    "dom": "#datapoint-2012_15_5_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[7].*"
+    ]
+    },
+    "datapoint9": {
+    "dom": "#datapoint-2013_17_93_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[8].*"
+    ]
+    },
+    "datapoint10": {
+    "dom": "#datapoint-2014_19_71_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[9].*"
+    ]
+    },
+    "datapoint11": {
+    "dom": "#datapoint-2015_21_21_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[10].*"
+    ]
+    },
+    "datapoint12": {
+    "dom": "#datapoint-2016_24_38_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[11].*"
+    ]
+    },
+    "datapoint13": {
+    "dom": "#datapoint-2017_24_72_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[12].*"
+    ]
+    },
+    "datapoint14": {
+    "dom": "#datapoint-2018_23_71_China",
+    "json": [
+    "$.datasets[0].series[0].name",
+    "$.datasets[0].series[0].records[13].*"
+    ]
+    },
+    "datapoint15": {
+    "dom": "#datapoint-2005_7_66_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[0].*"
+    ]
+    },
+    "datapoint16": {
+    "dom": "#datapoint-2006_7_76_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[1].*"
+    ]
+    },
+    "datapoint17": {
+    "dom": "#datapoint-2007_7_56_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[2].*"
+    ]
+    },
+    "datapoint18": {
+    "dom": "#datapoint-2008_6_77_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[3].*"
+    ]
+    },
+    "datapoint19": {
+    "dom": "#datapoint-2009_5_4_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[4].*"
+    ]
+    },
+    "datapoint20": {
+    "dom": "#datapoint-2010_5_64_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[5].*"
+    ]
+    },
+    "datapoint21": {
+    "dom": "#datapoint-2011_6_09_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[6].*"
+    ]
+    },
+    "datapoint22": {
+    "dom": "#datapoint-2012_7_24_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[7].*"
+    ]
+    },
+    "datapoint23": {
+    "dom": "#datapoint-2013_7_59_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[8].*"
+    ]
+    },
+    "datapoint24": {
+    "dom": "#datapoint-2014_7_69_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[9].*"
+    ]
+    },
+    "datapoint25": {
+    "dom": "#datapoint-2015_7_52_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[10].*"
+    ]
+    },
+    "datapoint26": {
+    "dom": "#datapoint-2016_6_87_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[11].*"
+    ]
+    },
+    "datapoint27": {
+    "dom": "#datapoint-2017_6_08_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[12].*"
+    ]
+    },
+    "datapoint28": {
+    "dom": "#datapoint-2018_5_3_US",
+    "json": [
+    "$.datasets[0].series[1].name",
+    "$.datasets[0].series[1].records[13].*"
+    ]
+    },
+    "datapoint29": {
+    "dom": "#datapoint-2005_4_75_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[0].*"
+    ]
+    },
+    "datapoint30": {
+    "dom": "#datapoint-2006_4_61_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[1].*"
+    ]
+    },
+    "datapoint31": {
+    "dom": "#datapoint-2007_4_33_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[2].*"
+    ]
+    },
+    "datapoint32": {
+    "dom": "#datapoint-2008_4_18_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[3].*"
+    ]
+    },
+    "datapoint33": {
+    "dom": "#datapoint-2009_3_91_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[4].*"
+    ]
+    },
+    "datapoint34": {
+    "dom": "#datapoint-2010_4_2_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[5].*"
+    ]
+    },
+    "datapoint35": {
+    "dom": "#datapoint-2011_3_51_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[6].*"
+    ]
+    },
+    "datapoint36": {
+    "dom": "#datapoint-2012_4_57_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[7].*"
+    ]
+    },
+    "datapoint37": {
+    "dom": "#datapoint-2013_4_56_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[8].*"
+    ]
+    },
+    "datapoint38": {
+    "dom": "#datapoint-2014_4_7_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[9].*"
+    ]
+    },
+    "datapoint39": {
+    "dom": "#datapoint-2015_4_22_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[10].*"
+    ]
+    },
+    "datapoint40": {
+    "dom": "#datapoint-2016_4_15_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[11].*"
+    ]
+    },
+    "datapoint41": {
+    "dom": "#datapoint-2017_4_39_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[12].*"
+    ]
+    },
+    "datapoint42": {
+    "dom": "#datapoint-2018_4_39_Japan",
+    "json": [
+    "$.datasets[0].series[2].name",
+    "$.datasets[0].series[2].records[13].*"
+    ]
+    },
+    "datapoint43": {
+    "dom": "#datapoint-2005_3_32_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[0].*"
+    ]
+    },
+    "datapoint44": {
+    "dom": "#datapoint-2006_3_47_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[1].*"
+    ]
+    },
+    "datapoint45": {
+    "dom": "#datapoint-2007_3_15_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[2].*"
+    ]
+    },
+    "datapoint46": {
+    "dom": "#datapoint-2008_3_09_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[3].*"
+    ]
+    },
+    "datapoint47": {
+    "dom": "#datapoint-2009_3_81_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[4].*"
+    ]
+    },
+    "datapoint48": {
+    "dom": "#datapoint-2010_2_92_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[5].*"
+    ]
+    },
+    "datapoint49": {
+    "dom": "#datapoint-2011_3_17_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[6].*"
+    ]
+    },
+    "datapoint50": {
+    "dom": "#datapoint-2012_3_08_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[7].*"
+    ]
+    },
+    "datapoint51": {
+    "dom": "#datapoint-2013_2_95_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[8].*"
+    ]
+    },
+    "datapoint52": {
+    "dom": "#datapoint-2014_3_04_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[9].*"
+    ]
+    },
+    "datapoint53": {
+    "dom": "#datapoint-2015_3_21_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[10].*"
+    ]
+    },
+    "datapoint54": {
+    "dom": "#datapoint-2016_3_35_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[11].*"
+    ]
+    },
+    "datapoint55": {
+    "dom": "#datapoint-2017_3_44_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[12].*"
+    ]
+    },
+    "datapoint56": {
+    "dom": "#datapoint-2018_3_44_Germany",
+    "json": [
+    "$.datasets[0].series[3].name",
+    "$.datasets[0].series[3].records[13].*"
+    ]
+    }
+    }
+    }
+  </metadata>
+  <rect id="frame" pointer-events="all" x="0" y="0" width="100%" height="100%">
+  </rect>
+  <g role="graphics-document" aria-roledescription="line chart" transform="translate(25.60,8)">
+    <text class=" chart-title label " role="heading" x="74.29" y="18.50" text-anchor="start" id="chart-title">
+      <tspan x="74.29" dy="0">
+        Passenger cars sales in selected countries worldwide 2005 to 2018
+      </tspan>
+    </text>
+    <g id="series-label-strip" transform="translate(649.96,56)">
+      <g class=" label-leader " style="fill:hsl(12, 69%, 35%);stroke:hsl(12, 69%, 35%);">
+        <path d="&#10;      M0,354.60&#10;      L30,351.08" />
+        <circle r="1.8" cx="30" cy="351.08" />
+      </g>
+      <g class=" label-leader " style="fill:hsl(75, 43%, 45%);stroke:hsl(75, 43%, 45%);">
+        <path d="&#10;      M0,370.98&#10;      L30,369.58" />
+        <circle r="1.8" cx="30" cy="369.58" />
+      </g>
+      <g class=" label-leader " style="fill:hsl(40, 98%, 69%);stroke:hsl(40, 98%, 69%);">
+        <path d="&#10;      M0,388.08&#10;      L30,388.08" />
+        <circle r="1.8" cx="30" cy="388.08" />
+      </g>
+      <text class=" serieslabel label " x="30.75" y="30.72" text-anchor="middle" id="China">
+        China
+      </text>
+      <text class=" serieslabel label " x="50.11" y="358.58" text-anchor="middle" id="US">
+        U.S.
+      </text>
+      <text class=" serieslabel label " x="57.23" y="377.08" text-anchor="middle" id="Japan">
+        Japan
+      </text>
+      <text class=" serieslabel label " x="68.04" y="395.58" text-anchor="middle" id="Germany">
+        Germany
+      </text>
+    </g>
+    <g id="horiz-axis" role="graphics-object" aria-roledescription="x-axis" transform="translate(49.96,506)">
+      <path id="horiz-axis-line" d="M-10,0 h610" />
+      <g id="horiz-axis-tick-strip" transform="translate(0,-1)">
+        <path id="" class="tick-horiz" d="M46.15,0 v10" />
+        <path id="" class="grid-horiz" d="M46.15,0 v-450" />
+        <path id="" class="tick-horiz" d="M92.31,0 v10" />
+        <path id="" class="grid-horiz" d="M92.31,0 v-450" />
+        <path id="" class="tick-horiz" d="M138.46,0 v10" />
+        <path id="" class="grid-horiz" d="M138.46,0 v-450" />
+        <path id="" class="tick-horiz" d="M184.62,0 v10" />
+        <path id="" class="grid-horiz" d="M184.62,0 v-450" />
+        <path id="" class="tick-horiz" d="M230.77,0 v10" />
+        <path id="" class="grid-horiz" d="M230.77,0 v-450" />
+        <path id="" class="tick-horiz" d="M276.92,0 v10" />
+        <path id="" class="grid-horiz" d="M276.92,0 v-450" />
+        <path id="" class="tick-horiz" d="M323.08,0 v10" />
+        <path id="" class="grid-horiz" d="M323.08,0 v-450" />
+        <path id="" class="tick-horiz" d="M369.23,0 v10" />
+        <path id="" class="grid-horiz" d="M369.23,0 v-450" />
+        <path id="" class="tick-horiz" d="M415.38,0 v10" />
+        <path id="" class="grid-horiz" d="M415.38,0 v-450" />
+        <path id="" class="tick-horiz" d="M461.54,0 v10" />
+        <path id="" class="grid-horiz" d="M461.54,0 v-450" />
+        <path id="" class="tick-horiz" d="M507.69,0 v10" />
+        <path id="" class="grid-horiz" d="M507.69,0 v-450" />
+        <path id="" class="tick-horiz" d="M553.85,0 v10" />
+        <path id="" class="grid-horiz" d="M553.85,0 v-450" />
+        <path id="" class="tick-horiz" d="M600,0 v10" />
+        <path id="" class="grid-horiz" d="M600,0 v-450" />
+      </g>
+      <g id="tick-label-tier-horiz-0" transform="translate(0,25)">
+        <text class=" tick-label horiz south label " role="axislabel" x="8.49" y="8.49" text-anchor="end"
+          transform="&#10;        translate(8.49,8.49)&#10;        rotate(-45)&#10;        translate(-8.49,-8.49)"
+          id="tick-label-horiz-0">
+          2005
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="54.64" y="8.49" text-anchor="end"
+          transform="&#10;        translate(54.64,8.49)&#10;        rotate(-45)&#10;        translate(-54.64,-8.49)"
+          id="tick-label-horiz-1">
+          2006
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="100.79" y="8.49" text-anchor="end"
+          transform="&#10;        translate(100.79,8.49)&#10;        rotate(-45)&#10;        translate(-100.79,-8.49)"
+          id="tick-label-horiz-2">
+          2007
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="146.95" y="8.49" text-anchor="end"
+          transform="&#10;        translate(146.95,8.49)&#10;        rotate(-45)&#10;        translate(-146.95,-8.49)"
+          id="tick-label-horiz-3">
+          2008
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="193.10" y="8.49" text-anchor="end"
+          transform="&#10;        translate(193.10,8.49)&#10;        rotate(-45)&#10;        translate(-193.10,-8.49)"
+          id="tick-label-horiz-4">
+          2009
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="239.25" y="8.49" text-anchor="end"
+          transform="&#10;        translate(239.25,8.49)&#10;        rotate(-45)&#10;        translate(-239.25,-8.49)"
+          id="tick-label-horiz-5">
+          2010
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="285.41" y="8.49" text-anchor="end"
+          transform="&#10;        translate(285.41,8.49)&#10;        rotate(-45)&#10;        translate(-285.41,-8.49)"
+          id="tick-label-horiz-6">
+          2011
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="331.56" y="8.49" text-anchor="end"
+          transform="&#10;        translate(331.56,8.49)&#10;        rotate(-45)&#10;        translate(-331.56,-8.49)"
+          id="tick-label-horiz-7">
+          2012
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="377.72" y="8.49" text-anchor="end"
+          transform="&#10;        translate(377.72,8.49)&#10;        rotate(-45)&#10;        translate(-377.72,-8.49)"
+          id="tick-label-horiz-8">
+          2013
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="423.87" y="8.49" text-anchor="end"
+          transform="&#10;        translate(423.87,8.49)&#10;        rotate(-45)&#10;        translate(-423.87,-8.49)"
+          id="tick-label-horiz-9">
+          2014
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="470.02" y="8.49" text-anchor="end"
+          transform="&#10;        translate(470.02,8.49)&#10;        rotate(-45)&#10;        translate(-470.02,-8.49)"
+          id="tick-label-horiz-10">
+          2015
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="516.18" y="8.49" text-anchor="end"
+          transform="&#10;        translate(516.18,8.49)&#10;        rotate(-45)&#10;        translate(-516.18,-8.49)"
+          id="tick-label-horiz-11">
+          2016
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="562.33" y="8.49" text-anchor="end"
+          transform="&#10;        translate(562.33,8.49)&#10;        rotate(-45)&#10;        translate(-562.33,-8.49)"
+          id="tick-label-horiz-12">
+          2017
+        </text>
+        <text class=" tick-label horiz south label " role="axislabel" x="608.49" y="8.49" text-anchor="end"
+          transform="&#10;        translate(608.49,8.49)&#10;        rotate(-45)&#10;        translate(-608.49,-8.49)"
+          id="tick-label-horiz-13">
+          2018
+        </text>
+      </g>
+    </g>
+    <g id="vert-axis" role="graphics-object" aria-roledescription="y-axis" transform="translate(0,56)">
+      <text class=" axis-title label " role="heading" x="15" y="225" text-anchor="middle"
+        transform="&#10;        translate(15,225)&#10;        rotate(-90)&#10;        translate(-15,-225)"
+        id="axis-title-vert">
+        Passenger car sales in millions
+      </text>
+      <g id="tick-label-tier-vert-0" transform="translate(26.50,0)">
+        <text class=" tick-label vert west label " role="axislabel" x="14.46" y="455" text-anchor="end"
+          id="tick-label-vert-0">
+          0
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="14.46" y="365" text-anchor="end"
+          id="tick-label-vert-1">
+          5
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="14.46" y="275" text-anchor="end"
+          id="tick-label-vert-2">
+          10
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="14.46" y="185" text-anchor="end"
+          id="tick-label-vert-3">
+          15
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="14.46" y="95" text-anchor="end"
+          id="tick-label-vert-4">
+          20
+        </text>
+        <text class=" tick-label vert west label " role="axislabel" x="14.46" y="5" text-anchor="end"
+          id="tick-label-vert-5">
+          25
+        </text>
+      </g>
+      <g id="vert-axis-tick-strip" transform="translate(40.96,0)">
+        <path id="" class="tick-vert" d="M10,0 h-10" />
+        <path id="" class="grid-vert" d="M10,0 h600" />
+        <path id="" class="tick-vert" d="M10,90 h-10" />
+        <path id="" class="grid-vert" d="M10,90 h600" />
+        <path id="" class="tick-vert" d="M10,180 h-10" />
+        <path id="" class="grid-vert" d="M10,180 h600" />
+        <path id="" class="tick-vert" d="M10,270 h-10" />
+        <path id="" class="grid-vert" d="M10,270 h600" />
+        <path id="" class="tick-vert" d="M10,360 h-10" />
+        <path id="" class="grid-vert" d="M10,360 h600" />
+      </g>
+      <path transform="translate(50.96,0)" id="vert-axis-line" d="M0,0 v460" />
+    </g>
+    <g id="chart-layers" transform="translate(49.96,56)">
+      <rect id="data-backdrop" width="600" height="450" />
+      <g id="background-annotation-layer">
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+      </g>
+      <g id="data-layer" role="dataset">
+        <g id="series-u_s" data-highlight="4" class=" series "
+          style="fill:hsl(12, 69%, 35%);stroke:hsl(12, 69%, 35%);">
+          <g role="datapoint" id="datapoint-2005_7_66_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2005_7_66_US-0"
+              style="--datapoint-centroid:0px calc(100% - 0px);" class=" leg-right " d="M0,312.12L23.08,311.22"
+              clip-path="url(#clip-path)" />
+            <use href="#sym-square-outline" id="datapoint-2005_7_66_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(0,312.12)" />
+          </g>
+          <g role="datapoint" id="datapoint-2006_7_76_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2006_7_76_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M23.08,311.22L46.15,310.32" />
+            <path id="datapoint-2006_7_76_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M46.15,310.32L69.23,312.12" />
+            <use href="#sym-square-outline" id="datapoint-2006_7_76_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(46.15,310.32)" />
+          </g>
+          <g role="datapoint" id="datapoint-2007_7_56_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2007_7_56_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M69.23,312.12L92.31,313.92" />
+            <path id="datapoint-2007_7_56_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M92.31,313.92L115.38,321.03" />
+            <use href="#sym-square-outline" id="datapoint-2007_7_56_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(92.31,313.92)" />
+          </g>
+          <g role="datapoint" id="datapoint-2008_6_77_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2008_6_77_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M115.38,321.03L138.46,328.14" />
+            <path id="datapoint-2008_6_77_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M138.46,328.14L161.54,340.47" />
+            <use href="#sym-square-outline" id="datapoint-2008_6_77_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(138.46,328.14)" />
+          </g>
+          <g role="datapoint" id="datapoint-2009_5_4_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2009_5_4_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M161.54,340.47L184.62,352.80" />
+            <path id="datapoint-2009_5_4_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M184.62,352.80L207.69,350.64" />
+            <use href="#sym-square-outline" id="datapoint-2009_5_4_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(184.62,352.80)" />
+          </g>
+          <g role="datapoint" id="datapoint-2010_5_64_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2010_5_64_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M207.69,350.64L230.77,348.48" />
+            <path id="datapoint-2010_5_64_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M230.77,348.48L253.85,344.43" />
+            <use href="#sym-square-outline" id="datapoint-2010_5_64_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(230.77,348.48)" />
+          </g>
+          <g role="datapoint" id="datapoint-2011_6_09_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2011_6_09_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M253.85,344.43L276.92,340.38" />
+            <path id="datapoint-2011_6_09_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M276.92,340.38L300,330.03" />
+            <use href="#sym-square-outline" id="datapoint-2011_6_09_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(276.92,340.38)" />
+          </g>
+          <g role="datapoint" id="datapoint-2012_7_24_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2012_7_24_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M300,330.03L323.08,319.68" />
+            <path id="datapoint-2012_7_24_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M323.08,319.68L346.15,316.53" />
+            <use href="#sym-square-outline" id="datapoint-2012_7_24_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(323.08,319.68)" />
+          </g>
+          <g role="datapoint" id="datapoint-2013_7_59_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2013_7_59_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M346.15,316.53L369.23,313.38" />
+            <path id="datapoint-2013_7_59_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M369.23,313.38L392.31,312.48" />
+            <use href="#sym-square-outline" id="datapoint-2013_7_59_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(369.23,313.38)" />
+          </g>
+          <g role="datapoint" id="datapoint-2014_7_69_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2014_7_69_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M392.31,312.48L415.38,311.58" />
+            <path id="datapoint-2014_7_69_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M415.38,311.58L438.46,313.11" />
+            <use href="#sym-square-outline" id="datapoint-2014_7_69_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(415.38,311.58)" />
+          </g>
+          <g role="datapoint" id="datapoint-2015_7_52_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2015_7_52_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M438.46,313.11L461.54,314.64" />
+            <path id="datapoint-2015_7_52_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M461.54,314.64L484.62,320.49" />
+            <use href="#sym-square-outline" id="datapoint-2015_7_52_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(461.54,314.64)" />
+          </g>
+          <g role="datapoint" id="datapoint-2016_6_87_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2016_6_87_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M484.62,320.49L507.69,326.34" />
+            <path id="datapoint-2016_6_87_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M507.69,326.34L530.77,333.45" />
+            <use href="#sym-square-outline" id="datapoint-2016_6_87_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(507.69,326.34)" />
+          </g>
+          <g role="datapoint" id="datapoint-2017_6_08_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2017_6_08_US-0"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left " d="M530.77,333.45L553.85,340.56" />
+            <path id="datapoint-2017_6_08_US-1"
+              style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right " d="M553.85,340.56L576.92,347.58" />
+            <use href="#sym-square-outline" id="datapoint-2017_6_08_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(553.85,340.56)" />
+          </g>
+          <g role="datapoint" id="datapoint-2018_5_3_US" class="series_us data-line datapoint ">
+            <path id="datapoint-2018_5_3_US-0"
+              style="--datapoint-centroid:calc(100% - 0px) calc(100% - 0px);" class=" leg-left "
+              d="M576.92,347.58L600,354.60" clip-path="url(#clip-path)" />
+            <use href="#sym-square-outline" id="datapoint-2018_5_3_US-sym"
+              style="stroke-width:2;" class=" symbol outline " transform="translate(600,354.60)" />
+          </g>
+        </g>
+        <g id="series-japan" data-highlight="5" class=" series " style="fill:hsl(75, 43%, 45%);stroke:hsl(75, 43%, 45%);">
+          <g role="datapoint" id="datapoint-2005_4_75_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2005_4_75_Japan-0" style="--datapoint-centroid:0px calc(100% - 0px);"
+              class=" leg-right " d="M0,364.50L23.08,365.76" clip-path="url(#clip-path)" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2005_4_75_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(0,364.50)" />
+          </g>
+          <g role="datapoint" id="datapoint-2006_4_61_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2006_4_61_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M23.08,365.76L46.15,367.02" />
+            <path id="datapoint-2006_4_61_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M46.15,367.02L69.23,369.54" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2006_4_61_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(46.15,367.02)" />
+          </g>
+          <g role="datapoint" id="datapoint-2007_4_33_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2007_4_33_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M69.23,369.54L92.31,372.06" />
+            <path id="datapoint-2007_4_33_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M92.31,372.06L115.38,373.41" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2007_4_33_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(92.31,372.06)" />
+          </g>
+          <g role="datapoint" id="datapoint-2008_4_18_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2008_4_18_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M115.38,373.41L138.46,374.76" />
+            <path id="datapoint-2008_4_18_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M138.46,374.76L161.54,377.19" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2008_4_18_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(138.46,374.76)" />
+          </g>
+          <g role="datapoint" id="datapoint-2009_3_91_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2009_3_91_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M161.54,377.19L184.62,379.62" />
+            <path id="datapoint-2009_3_91_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M184.62,379.62L207.69,377.01" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2009_3_91_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(184.62,379.62)" />
+          </g>
+          <g role="datapoint" id="datapoint-2010_4_2_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2010_4_2_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M207.69,377.01L230.77,374.40" />
+            <path id="datapoint-2010_4_2_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right "
+              d="M230.77,374.40L253.85,380.61" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2010_4_2_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(230.77,374.40)" />
+          </g>
+          <g role="datapoint" id="datapoint-2011_3_51_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2011_3_51_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M253.85,380.61L276.92,386.82" />
+            <path id="datapoint-2011_3_51_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M276.92,386.82L300,377.28" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2011_3_51_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(276.92,386.82)" />
+          </g>
+          <g role="datapoint" id="datapoint-2012_4_57_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2012_4_57_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M300,377.28L323.08,367.74" />
+            <path id="datapoint-2012_4_57_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M323.08,367.74L346.15,367.83" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2012_4_57_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(323.08,367.74)" />
+          </g>
+          <g role="datapoint" id="datapoint-2013_4_56_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2013_4_56_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M346.15,367.83L369.23,367.92" />
+            <path id="datapoint-2013_4_56_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M369.23,367.92L392.31,366.66" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2013_4_56_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(369.23,367.92)" />
+          </g>
+          <g role="datapoint" id="datapoint-2014_4_7_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2014_4_7_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M392.31,366.66L415.38,365.40" />
+            <path id="datapoint-2014_4_7_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right "
+              d="M415.38,365.40L438.46,369.72" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2014_4_7_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(415.38,365.40)" />
+          </g>
+          <g role="datapoint" id="datapoint-2015_4_22_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2015_4_22_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M438.46,369.72L461.54,374.04" />
+            <path id="datapoint-2015_4_22_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M461.54,374.04L484.62,374.67" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2015_4_22_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(461.54,374.04)" />
+          </g>
+          <g role="datapoint" id="datapoint-2016_4_15_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2016_4_15_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M484.62,374.67L507.69,375.30" />
+            <path id="datapoint-2016_4_15_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M507.69,375.30L530.77,373.14" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2016_4_15_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(507.69,375.30)" />
+          </g>
+          <g role="datapoint" id="datapoint-2017_4_39_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2017_4_39_Japan-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M530.77,373.14L553.85,370.98" />
+            <path id="datapoint-2017_4_39_Japan-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M553.85,370.98L576.92,370.98" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2017_4_39_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(553.85,370.98)" />
+          </g>
+          <g role="datapoint" id="datapoint-2018_4_39_Japan" class="series_japan data-line datapoint ">
+            <path id="datapoint-2018_4_39_Japan-0" style="--datapoint-centroid:calc(100% - 0px) 50%;" class=" leg-left "
+              d="M576.92,370.98L600,370.98" clip-path="url(#clip-path)" />
+            <use href="#sym-triangle_up-outline" id="datapoint-2018_4_39_Japan-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(600,370.98)" />
+          </g>
+        </g>
+        <g id="series-China" data-highlight="3" class="series_china series " style="fill:hsl(225, 30%, 52%);stroke:hsl(225, 30%, 52%);">
+          <g role="datapoint" id="datapoint-2005_3_97_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2005_3_97_China-0" style="--datapoint-centroid:0px calc(100% - 0px);"
+              class=" leg-right " d="M0,378.54L23.08,367.65" clip-path="url(#clip-path)" />
+            <use href="#sym-circle-outline" id="datapoint-2005_3_97_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(0,378.54)" />
+          </g>
+          <g role="datapoint" id="datapoint-2006_5_18_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2006_5_18_China-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M23.08,367.65L46.15,356.76" />
+            <path id="datapoint-2006_5_18_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M46.15,356.76L69.23,346.68" />
+            <use href="#sym-circle-outline" id="datapoint-2006_5_18_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(46.15,356.76)" />
+          </g>
+          <g role="datapoint" id="datapoint-2007_6_3_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2007_6_3_China-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M69.23,346.68L92.31,336.60" />
+            <path id="datapoint-2007_6_3_China-1" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-right "
+              d="M92.31,336.60L115.38,332.46" />
+            <use href="#sym-circle-outline" id="datapoint-2007_6_3_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(92.31,336.60)" />
+          </g>
+          <g role="datapoint" id="datapoint-2008_6_76_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2008_6_76_China-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M115.38,332.46L138.46,328.32" />
+            <path id="datapoint-2008_6_76_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M138.46,328.32L161.54,296.19" />
+            <use href="#sym-circle-outline" id="datapoint-2008_6_76_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(138.46,328.32)" />
+          </g>
+          <g role="datapoint" id="datapoint-2009_10_33_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2009_10_33_China-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M161.54,296.19L184.62,264.06" />
+            <path id="datapoint-2009_10_33_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M184.62,264.06L207.69,233.19" />
+            <use href="#sym-circle-outline" id="datapoint-2009_10_33_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(184.62,264.06)" />
+          </g>
+          <g role="datapoint" id="datapoint-2010_13_76_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2010_13_76_China-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M207.69,233.19L230.77,202.32" />
+            <path id="datapoint-2010_13_76_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M230.77,202.32L253.85,195.93" />
+            <use href="#sym-circle-outline" id="datapoint-2010_13_76_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(230.77,202.32)" />
+          </g>
+          <g role="datapoint" id="datapoint-2011_14_47_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2011_14_47_China-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M253.85,195.93L276.92,189.54" />
+            <path id="datapoint-2011_14_47_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M276.92,189.54L300,180.27" />
+            <use href="#sym-circle-outline" id="datapoint-2011_14_47_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(276.92,189.54)" />
+          </g>
+          <g role="datapoint" id="datapoint-2012_15_5_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2012_15_5_China-0" style="--datapoint-centroid:50% calc(100% - 0px);" class=" leg-left "
+              d="M300,180.27L323.08,171" />
+            <path id="datapoint-2012_15_5_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M323.08,171L346.15,149.13" />
+            <use href="#sym-circle-outline" id="datapoint-2012_15_5_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(323.08,171)" />
+          </g>
+          <g role="datapoint" id="datapoint-2013_17_93_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2013_17_93_China-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M346.15,149.13L369.23,127.26" />
+            <path id="datapoint-2013_17_93_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M369.23,127.26L392.31,111.24" />
+            <use href="#sym-circle-outline" id="datapoint-2013_17_93_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(369.23,127.26)" />
+          </g>
+          <g role="datapoint" id="datapoint-2014_19_71_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2014_19_71_China-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M392.31,111.24L415.38,95.22" />
+            <path id="datapoint-2014_19_71_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M415.38,95.22L438.46,81.72" />
+            <use href="#sym-circle-outline" id="datapoint-2014_19_71_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(415.38,95.22)" />
+          </g>
+          <g role="datapoint" id="datapoint-2015_21_21_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2015_21_21_China-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M438.46,81.72L461.54,68.22" />
+            <path id="datapoint-2015_21_21_China-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M461.54,68.22L484.62,39.69" />
+            <use href="#sym-circle-outline" id="datapoint-2015_21_21_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(461.54,68.22)" />
+          </g>
+          <g role="datapoint" id="datapoint-2016_24_38_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2016_24_38_China-0" style="--datapoint-centroid:50% 14.220000000000027px;"
+              class=" leg-left " d="M484.62,39.69L507.69,11.16" />
+            <path id="datapoint-2016_24_38_China-1" style="--datapoint-centroid:50% 14.220000000000027px;"
+              class=" leg-right " d="M507.69,11.16L530.77,8.10" />
+            <use href="#sym-circle-outline" id="datapoint-2016_24_38_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(507.69,11.16)" />
+          </g>
+          <g role="datapoint" id="datapoint-2017_24_72_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2017_24_72_China-0" style="--datapoint-centroid:50% 1.9800000000000182px;"
+              class=" leg-left " d="M530.77,8.10L553.85,5.04" />
+            <path id="datapoint-2017_24_72_China-1" style="--datapoint-centroid:50% 1.9800000000000182px;"
+              class=" leg-right " d="M553.85,5.04L576.92,14.13" />
+            <use href="#sym-circle-outline" id="datapoint-2017_24_72_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(553.85,5.04)" />
+          </g>
+          <g role="datapoint" id="datapoint-2018_23_71_China" class="series_china data-line datapoint ">
+            <path id="datapoint-2018_23_71_China-0" style="--datapoint-centroid:calc(100% - 0px) calc(100% - 0px);"
+              class=" leg-left " d="M576.92,14.13L600,23.22" clip-path="url(#clip-path)" />
+            <use href="#sym-circle-outline" id="datapoint-2018_23_71_China-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(600,23.22)" />
+          </g>
+        </g>
+        <g id="series-germany" data-highlight="6" class=" series " style="fill:hsl(40, 98%, 69%);stroke:hsl(40, 98%, 69%);">
+          <g role="datapoint" id="datapoint-2005_3_32_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2005_3_32_Germany-0" style="--datapoint-centroid:0px calc(100% - 0px);"
+              class=" leg-right " d="M0,390.24L23.08,388.89" clip-path="url(#clip-path)" />
+            <use href="#sym-diamond-outline" id="datapoint-2005_3_32_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(0,390.24)" />
+          </g>
+          <g role="datapoint" id="datapoint-2006_3_47_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2006_3_47_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M23.08,388.89L46.15,387.54" />
+            <path id="datapoint-2006_3_47_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M46.15,387.54L69.23,390.42" />
+            <use href="#sym-diamond-outline" id="datapoint-2006_3_47_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(46.15,387.54)" />
+          </g>
+          <g role="datapoint" id="datapoint-2007_3_15_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2007_3_15_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M69.23,390.42L92.31,393.30" />
+            <path id="datapoint-2007_3_15_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M92.31,393.30L115.38,393.84" />
+            <use href="#sym-diamond-outline" id="datapoint-2007_3_15_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(92.31,393.30)" />
+          </g>
+          <g role="datapoint" id="datapoint-2008_3_09_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2008_3_09_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M115.38,393.84L138.46,394.38" />
+            <path id="datapoint-2008_3_09_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M138.46,394.38L161.54,387.90" />
+            <use href="#sym-diamond-outline" id="datapoint-2008_3_09_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(138.46,394.38)" />
+          </g>
+          <g role="datapoint" id="datapoint-2009_3_81_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2009_3_81_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M161.54,387.90L184.62,381.42" />
+            <path id="datapoint-2009_3_81_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M184.62,381.42L207.69,389.43" />
+            <use href="#sym-diamond-outline" id="datapoint-2009_3_81_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(184.62,381.42)" />
+          </g>
+          <g role="datapoint" id="datapoint-2010_2_92_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2010_2_92_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M207.69,389.43L230.77,397.44" />
+            <path id="datapoint-2010_2_92_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M230.77,397.44L253.85,395.19" />
+            <use href="#sym-diamond-outline" id="datapoint-2010_2_92_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(230.77,397.44)" />
+          </g>
+          <g role="datapoint" id="datapoint-2011_3_17_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2011_3_17_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M253.85,395.19L276.92,392.94" />
+            <path id="datapoint-2011_3_17_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M276.92,392.94L300,393.75" />
+            <use href="#sym-diamond-outline" id="datapoint-2011_3_17_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(276.92,392.94)" />
+          </g>
+          <g role="datapoint" id="datapoint-2012_3_08_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2012_3_08_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M300,393.75L323.08,394.56" />
+            <path id="datapoint-2012_3_08_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M323.08,394.56L346.15,395.73" />
+            <use href="#sym-diamond-outline" id="datapoint-2012_3_08_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(323.08,394.56)" />
+          </g>
+          <g role="datapoint" id="datapoint-2013_2_95_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2013_2_95_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M346.15,395.73L369.23,396.90" />
+            <path id="datapoint-2013_2_95_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M369.23,396.90L392.31,396.09" />
+            <use href="#sym-diamond-outline" id="datapoint-2013_2_95_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(369.23,396.90)" />
+          </g>
+          <g role="datapoint" id="datapoint-2014_3_04_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2014_3_04_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M392.31,396.09L415.38,395.28" />
+            <path id="datapoint-2014_3_04_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M415.38,395.28L438.46,393.75" />
+            <use href="#sym-diamond-outline" id="datapoint-2014_3_04_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(415.38,395.28)" />
+          </g>
+          <g role="datapoint" id="datapoint-2015_3_21_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2015_3_21_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M438.46,393.75L461.54,392.22" />
+            <path id="datapoint-2015_3_21_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M461.54,392.22L484.62,390.96" />
+            <use href="#sym-diamond-outline" id="datapoint-2015_3_21_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(461.54,392.22)" />
+          </g>
+          <g role="datapoint" id="datapoint-2016_3_35_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2016_3_35_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M484.62,390.96L507.69,389.70" />
+            <path id="datapoint-2016_3_35_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M507.69,389.70L530.77,388.89" />
+            <use href="#sym-diamond-outline" id="datapoint-2016_3_35_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(507.69,389.70)" />
+          </g>
+          <g role="datapoint" id="datapoint-2017_3_44_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2017_3_44_Germany-0" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-left " d="M530.77,388.89L553.85,388.08" />
+            <path id="datapoint-2017_3_44_Germany-1" style="--datapoint-centroid:50% calc(100% - 0px);"
+              class=" leg-right " d="M553.85,388.08L576.92,388.08" />
+            <use href="#sym-diamond-outline" id="datapoint-2017_3_44_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(553.85,388.08)" />
+          </g>
+          <g role="datapoint" id="datapoint-2018_3_44_Germany" class="series_germany data-line datapoint ">
+            <path id="datapoint-2018_3_44_Germany-0" style="--datapoint-centroid:calc(100% - 0px) 50%;"
+              class=" leg-left " d="M576.92,388.08L600,388.08" clip-path="url(#clip-path)" />
+            <use href="#sym-diamond-outline" id="datapoint-2018_3_44_Germany-sym" style="stroke-width:2;"
+              class=" symbol outline " transform="translate(600,388.08)" />
+          </g>
+        </g>
+      </g>
+      <g id="highlights-layer">
+        <g data-highlight="10" class="highlight-foreground">
+          <circle cx="0" cy="379" r="15"/> 
+        </g>
+        <g data-highlight="11" class="highlight-foreground">
+          <circle cx="28" cy="365" r="15"/> 
+        </g>
+        <g data-highlight="12" class="highlight-foreground">
+          <circle cx="138" cy="328" r="15"/> 
+        </g>
+        <g data-highlight="13" class="highlight-foreground">
+          <circle cx="599" cy="23" r="15"/> 
+        </g>
+      </g>
+      <g id="foreground-annotation-layer">
+        <g>
+        </g>
+        <g>
+        </g>
+      </g>
+      <g id="selection-layer">
+      </g>
+      <g id="focus-layer">
+      </g>
+    </g>
+  </g>
+
+  
+
+  <g transform="translate(800,100)">
+    <text id="narratives" x="0">
+      <tspan x="0" dy="0" data-highlight="1">This line chart compares the numbers of passenger car sales 
+        <tspan x="20" dy="1.5em">in different nations over time from 2005 to 2018.</tspan>
+      </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="2">The 4 lines show the numbers of passenger car sales in</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="3">China,</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="4">the U.S., </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="5">Japan, </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="6">and Germany.</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="7">All the lines except China cluster together</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="3">while China lies above.</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="9">U.S., Japan, and Germany track each other across the whole chart. </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="10">China starts as the third highest line, </tspan>
+      <tspan x="0" dy="1.5em" data-highlight="11">crosses over Japan,</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="12">crosses over U.S.,</tspan>
+      <tspan x="0" dy="1.5em" data-highlight="13">and ends as the highest line.</tspan>
+    </text>
+  </g>
+
+  <script href="./narrative-highlights.js"/>
+
+</svg>
