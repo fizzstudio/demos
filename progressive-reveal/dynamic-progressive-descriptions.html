@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Progressive Descriptions</title>
+  <script src="./_silverbullet.js">  </script>
+  <link rel="stylesheet" href="./_silverbullet.css" type="text/css" media="screen, projection, print">
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+    }
+
+
+    header {
+      grid-column: 1/3;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: Helvetica, sans-serif;
+      font-size: 2.5em;
+      margin: 0.25em;
+      padding: 0;
+    }
+
+    h2 {
+      font-family: Helvetica, sans-serif;
+      font-size: 1em;
+      padding: 0.5em 1em;
+      margin: 0;
+
+      /* height: 50px; */
+      background-color: hsl(0, 0%, 93%);
+      position: sticky;
+      top: 0;
+
+    }
+
+    main {
+      overflow-y: auto;
+      /* padding: 1em; */
+
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1.5em;
+
+      line-height: 1.8em;
+    }
+
+    main p {
+      text-align: justify;
+      padding-inline: 1em;
+
+    }
+
+    main ul {
+      margin-left: 1em;
+    }
+
+    aside {
+      overflow-y: auto;
+      padding-inline: 1em;
+      /* background-color: orange; */
+    }
+
+    img {
+      width: 90%;
+    }
+
+
+    [data-fire] {
+      display: block;
+      min-height: 29em;
+    }
+
+    /* [data-para-step] {
+      display: block;
+      min-height: 2em;
+    } */
+
+    [data-para-step] p {
+      margin-inline: 2em;
+    }
+
+    [data-para-step]:last-of-type {
+      margin-bottom: 5em;
+    }
+
+    .emphasize {
+      background-color: hsl(229, 73%, 90%)
+    }
+
+    ul#nav {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+      font-size: 1.25em;
+    }
+    
+    ul#nav li {
+      padding: 0.5em;
+      background-color: hsl(208, 91%, 87%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 class="heading">Dynamic Progressive Descriptions</h1>
+
+    <ul id="nav">
+      <li><a href="static-progressive-descriptions.html">Static y-axis</a></li>
+      <li>Dynamic y-axis</li>
+    </ul>
+  </header>
+  <aside id="chart_container">
+    <para-chart id="main-chart" manifest="./assets/data/progressive-1-grow.json"></para-chart>
+  </aside>
+  <main id="main">
+
+    <div class="steps">
+      <div data-fire="0" class="scroll" data-para-step="1"
+      data-para-action="setManifest(./assets/data/progressive-1-grow.json)">
+        <h2 id="step-0" class="subheading">Progressive reveal demo</h2>
+
+        <p>Start with US only</p>
+      </div>
+
+      <div data-fire="1" class="scroll" data-para-step="1"
+        data-para-action="setManifest(./assets/data/progressive-2-grow.json)">
+        <h2 id="step-1" class="subheading">Progress 2</h2>
+
+        <p>Add Japan</p>
+      </div>
+
+
+      <div data-fire="1" class="scroll" data-para-step="1"
+        data-para-action="setManifest(./assets/data/progressive-3-grow.json)">
+        <h2 id="step-2" class="subheading">Progress 3</h2>
+
+        <p>Add Germany</p>
+      </div>
+
+
+      <div data-fire="1" class="scroll" data-para-step="1"
+        data-para-action="setManifest(./assets/data/progressive-4-grow.json)">
+        <h2 id="step-3" class="subheading">Progress Final</h2>
+
+        <p>Add China</p>
+      </div>
+
+
+
+    </div>
+  </main>
+
+  <script type="module" src="./script/paracharts.js"></script>
+
+</body>
+
+</html>
